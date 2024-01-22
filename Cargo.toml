@@ -1,5 +1,5 @@
 [workspace]
-    members  = ["minwindef", "windows-rs-ext"]
+    members  = ["minwindef-rs", "windows-rs-ext"]
     resolver = "2"
 
 # These are applicable for all crates we might create here - they're what we aim to extend after all!
