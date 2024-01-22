@@ -1,0 +1,15 @@
+[workspace]
+    members  = ["minwindef", "windows-rs-ext"]
+    resolver = "2"
+
+# These are applicable for all crates we might create here - they're what we aim to extend after all!
+[workspace.dependencies]
+    windows     = "0.52"
+    windows-sys = "0.52"
+
+[workspace.package]
+    authors     = ["Riven Skaye <riven@tae.moe>"]
+    description = "Extensions to windows-rs that serve to provide the macros and header-only functions from the Windows SDK"
+    edition     = "2021"
+    keywords    = ["windows", "windows-extensions", "windows-rs", "windows-sys"]
+    version     = "0.0.1"
