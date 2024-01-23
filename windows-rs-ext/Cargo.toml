@@ -2,3 +2,13 @@
     edition = "2021"
     name    = "windows-rs-ext"
     version = "0.0.1"
+
+
+[features]
+    default   = ["minwindef"]
+    minwindef = ["dep:minwindef"]
+
+[dependencies]
+    minwindef   = {path = "../minwindef-rs/", optional = true}
+    windows     = {workspace = true}
+    windows-sys = {workspace = true}
