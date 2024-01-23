@@ -1,8 +1,10 @@
 [package]
     edition = "2021"
-    name    = "minwindef-rs"
+    name    = "minwindef"
     version = "0.1.0"
 
     # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+    windows     = {workspace = true, features = ["Win32_Foundation"]}
+    windows-sys = {workspace = true}
