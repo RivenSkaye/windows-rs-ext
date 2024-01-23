@@ -1,4 +1,4 @@
-# Extensions for the windows-rs and windows-sys crates
+# Extensions for the `windows-rs` and `windows-sys` crates
 
 The code here is _not_ (yet?) meant as a publishable crate. It exists to provide basic implementations of macros and header-only functions from the Windows SDK. Initially proposed as a collection of snippets to be added to [Kenny Kerr's blog](https://github.com/kennykerr/blog) in a [formalized feature request](https://github.com/microsoft/windows-rs/issues/2798) where it was initially decided to add snippets to the blog.
 
@@ -20,20 +20,20 @@ The C++ header counterparts of most of what happens here are macros. Except when
 
 # FAQ
 
-Q: I really want to use these crates in my code, can I?
-A: Git dependencies are a feature cargo provides, so you _can_. The real question is if you _should_.
+- Q: I really want to use these crates in my code, can I?  
+  A: Git dependencies are a feature cargo provides, so you _can_. The real question is if you _should_.
 
-Q: Okay, so should I?
-A: No. At least in its current state, this workspace provides nothing of interest except some snippets. Maybe in the future though, who knows how much traction this gets?
+- Q: Okay, so should I?  
+  A: No. At least in its current state, this workspace provides nothing of interest except some snippets. Maybe in the future though, who knows how much traction this gets?
 
-Q: I'm missing macro X from header Y!
-A: Questions ususally have question marks. But I understand the problem and frustration, so please open an issue or roll your own and hit us with a PR!
+- Q: I'm missing macro X from header Y!  
+  A: Questions ususally have question marks. But I understand the problem and frustration, so please open an issue or roll your own and hit us with a PR!
 
-Q: I want to add stuff, but where can I find the C++ implementations to base myself on?
-A: In the Windows SDK. Look around on MSDN and the web on where to get that. It should come with any Visual Studio install that includes Windows 10/11 SDK workloads.
+- Q: I want to add stuff, but where can I find the C++ implementations to base myself on?  
+  A: In the Windows SDK. Look around on MSDN and the web on where to get that. It should come with any Visual Studio install that includes Windows 10/11 SDK workloads.
 
-Q: I'm missing all of a family of functions, where are they? ([this was actually opened](https://github.com/microsoft/windows-rs/issues/1572))
-A: Now you can add them yourself! Or open an issue to ask for them.
+- Q: I'm missing all of a family of functions, where are they? ([this was actually opened for the full `MI_*` suite](https://github.com/microsoft/windows-rs/issues/1572))  
+  A: Now you can add them yourself! Or open an issue to ask for them.
 
-Q: I requested something but it was closed as wontfix, why is that?
-A: Some macros are actually only relevant to the C++ stuff and this repo only exists for actual added value. Sorry!
+- Q: I requested something but it was closed as wontfix, why is that?  
+  A: Some macros are actually only relevant to the C++ stuff and this repo only exists for actual added value. Sorry!
