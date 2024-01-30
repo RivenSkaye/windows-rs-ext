@@ -2,11 +2,13 @@
     authors     = ["Riven Skaye <riven@tae.moe>"]
     description = "Extensions to windows-rs that serve to provide the macros and header-only functions from the Windows SDK"
     edition     = "2021"
+    homepage    = "https://github.com/RivenSkaye/windows-rs-ext"
     keywords    = ["windows", "windows-extensions", "windows-rs", "windows-sys"]
     license     = "MIT OR Apache-2.0"
     members     = ["minwindef-rs", "windows-rs-ext"]
     name        = "windows-ext"
-    version     = "0.0.0"
+    repository  = "https://github.com/RivenSkaye/windows-rs-ext"
+    version     = "0.0.1"
 
 [dependencies]
     windows     = {version = "0.52", optional = true}
