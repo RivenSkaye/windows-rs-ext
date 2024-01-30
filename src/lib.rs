@@ -10,4 +10,4 @@
 //! available through implemented traits
 
 #[cfg(feature = "minwindef")]
-pub use minwindef;
+pub mod minwindef;
