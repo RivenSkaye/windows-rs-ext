@@ -8,7 +8,6 @@
     name        = "windows-ext"
     version     = "0.0.0"
 
-# These are applicable for all crates we might create here - they're what we aim to extend after all!
 [dependencies]
     windows     = {version = "0.52", optional = true}
     windows-sys = {version = "0.52", optional = true}
