@@ -1,2 +1,6 @@
+# Don't track build artifacts and metadata
 /target
 Cargo.lock
+
+# Ignore vsc stuff
+/.vscode
