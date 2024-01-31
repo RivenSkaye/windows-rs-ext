@@ -24,6 +24,9 @@
 //! let (hi, lo) = splitdword(full)
 //! ```
 
+#[cfg(feature = "ext-impls")]
+pub mod ext;
+
 /// Get the low order word as u16
 #[inline(always)]
 pub const fn loword(dw: u32) -> u16 {
