@@ -38,3 +38,12 @@ compile_error!(
 pub mod minwindef;
 #[cfg(feature = "no-minwindef")]
 pub(crate) mod minwindef;
+
+/// Wrapper for all extension traits this crate defines
+///
+/// All traits can be used with `use windows_ext::ext::*`.
+#[cfg(feature = "ext-impls")]
+pub mod ext {
+    #[cfg(not(feature = "no-minwindef"))]
+    pub use crate::minwindef::ext::*;
+}

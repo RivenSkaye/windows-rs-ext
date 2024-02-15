@@ -15,7 +15,8 @@
     windows-sys = {version = "0.52", optional = true}
 
 [features]
-    default      = ["winrs"]
+    default      = ["winrs", "ext-impls"]
     no-minwindef = []
+    ext-impls    = []
     winrs        = ["dep:windows"]
     winsys       = ["dep:windows-sys"]
