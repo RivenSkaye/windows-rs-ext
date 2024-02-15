@@ -1,3 +1,5 @@
+#![deny(missing_docs, rustdoc::broken_intra_doc_links, clippy::cargo)]
+
 //! # Extensions for `windows-rs` and `windows-sys`
 //! The extensions defined in this module aim to help make the windows crates more ergonomic to use, providing the
 //! well-known macros from the SDK headers to us mere mortals who prefer memory safety and fearlessness.
