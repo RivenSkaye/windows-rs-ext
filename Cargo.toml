@@ -3,19 +3,17 @@
     description = "Extensions to windows-rs that serve to provide the macros and header-only functions from the Windows SDK"
     edition     = "2021"
     homepage    = "https://github.com/RivenSkaye/windows-rs-ext"
-    keywords    = ["windows", "windows-extensions", "windows-rs", "windows-sys"]
+    keywords    = ["windows", "windows-extensions", "windows-rs"]
     license     = "MIT OR Apache-2.0"
     name        = "windows-ext"
     repository  = "https://github.com/RivenSkaye/windows-rs-ext"
     version     = "0.0.1"
+    categories = ["os::windows-apis", "api-bindings"]
 
 [dependencies]
-    windows     = {version = "0.52", optional = true}
-    windows-sys = {version = "0.52", optional = true}
+    windows     = { version = "0.52" }
 
 [features]
-    default      = ["winrs", "ext-impls"]
+    default      = ["ext-impls"]
     no-minwindef = []
     ext-impls    = []
-    winrs        = ["dep:windows"]
-    winsys       = ["dep:windows-sys"]

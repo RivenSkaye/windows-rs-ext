@@ -1,6 +1,6 @@
 #![deny(missing_docs, rustdoc::broken_intra_doc_links, clippy::cargo)]
 
-//! # Extensions for `windows-rs` and `windows-sys`
+//! # Extensions for `windows-rs`
 //! The extensions defined in this module aim to help make the windows crates more ergonomic to use, providing the
 //! well-known macros from the SDK headers to us mere mortals who prefer memory safety and fearlessness.
 //!
@@ -18,23 +18,7 @@
 //! added instead, as a way to not impact the resulting binary size; the function call is almost as big as the bitops.
 //!
 //! As it stands, this crate only implements a single header. Please do feel free to contribute to the project by
-//! implementing more macros and header-only functions that aren't available in the windows-rs and windows-sys bindings!
-//!
-//! ## `windows-rs` or `windows-sys`?
-//! That's right, it's a mutually exclusive choice here. For now at least. A fair few types defined in the crates are
-//! effectively the same thing, but they conflict due to being defined separately. This means Rust will treat these
-//! objects as different types. As such, a choice was made to disallow having both optional dependencies. Perhaps this
-//! will change in the future if there's some easily applicable and readable way to implement on both copies.
-//! Until then, you'll have to choose between:
-//! - The default feature (windows-rs)
-//! - no default features and windows-sys
-
-#[cfg(any(all(feature = "winrs", feature = "winsys"), all(not(feature = "winrs"), not(feature = "winsys"))))]
-compile_error!(
-    "It's impossible to unify some of the code in this crate for windows-sys and windows-rs! \
-        The default feature includes windows-rs, if you wish to use windows-sys, \
-        please disable the default feature as well."
-);
+//! implementing more macros and header-only functions that aren't available in the windows-rs bindings!
 
 #[cfg(not(feature = "no-minwindef"))]
 pub mod minwindef;
