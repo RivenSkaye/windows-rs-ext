@@ -20,9 +20,9 @@
 //! As it stands, this crate only implements a single header. Please do feel free to contribute to the project by
 //! implementing more macros and header-only functions that aren't available in the windows-rs bindings!
 
-#[cfg(not(feature = "no-minwindef"))]
+#[cfg(feature = "minwindef")]
 pub mod minwindef;
-#[cfg(feature = "no-minwindef")]
+#[cfg(not(feature = "minwindef"))]
 pub(crate) mod minwindef;
 
 /// Wrapper for all extension traits this crate defines
@@ -30,6 +30,6 @@ pub(crate) mod minwindef;
 /// All traits can be used with `use windows_ext::ext::*`.
 #[cfg(feature = "ext-impls")]
 pub mod ext {
-    #[cfg(not(feature = "no-minwindef"))]
+    #[cfg(feature = "minwindef")]
     pub use crate::minwindef::ext::*;
 }
