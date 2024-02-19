@@ -26,5 +26,3 @@ jobs:
           toolchain: ${{matrix.version}}-${{matrix.target}}
       - name: test
         run: cargo test --locked
-      - name: doctest
-        run: cargo test --locked --doc
