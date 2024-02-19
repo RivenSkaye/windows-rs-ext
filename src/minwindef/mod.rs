@@ -14,14 +14,17 @@
 //! They just return a tuple containing (in order) the low order and high order components. This
 //! is achieved by just calling both of those functions one after the other.
 //! ```
+//! use windows_ext::minwindef::*;
 //! // existing minwindef.h macros:
 //! let full: u32 = 9548625;
-//! let lo = loword(full);
-//! let hi = hiword(full);
+//! let lo1 = loword(full);
+//! let hi1 = hiword(full);
 //!
 //! // convenience wrapper:
 //! let full: u32 = 9548625;
-//! let (hi, lo) = splitdword(full)
+//! let (lo2, hi2) = splitdword(full);
+//! assert_eq!(lo1, lo2);
+//! assert_eq!(hi1, hi2);
 //! ```
 
 #[cfg(feature = "ext-impls")]
@@ -39,7 +42,7 @@ pub const fn hiword(dw: u32) -> u16 {
     (dw >> 16) as u16 // truncate the zero-padding
 }
 
-/// Split a single dword (`u32`) in both of its words (`u16`s)
+/// Split a single dword (`u32`) in both of its words (`u16`s) ordered (low, high)
 #[inline(always)]
 pub const fn splitdword(dw: u32) -> (u16, u16) {
     (loword(dw), hiword(dw))
@@ -57,7 +60,7 @@ pub const fn hibyte(word: u16) -> u8 {
     (word >> 8) as u8
 }
 
-/// Split a single word (`u16`) in both of its bytes (`u8`s)
+/// Split a single word (`u16`) in both of its bytes (`u8`s) ordered (low, high)
 #[inline(always)]
 pub const fn splitword(word: u16) -> (u8, u8) {
     (lobyte(word), hibyte(word))
@@ -75,7 +78,7 @@ pub const fn hidword(longlong: u64) -> u32 {
     (longlong >> 32) as u32
 }
 
-/// Split a single dword (`u32`) in both of its words (`u16`s)
+/// Split a single dword (`u32`) in both of its words (`u16`s) ordered (low, high)
 #[inline(always)]
 pub const fn splitqword(qw: u64) -> (u32, u32) {
     (lodword(qw), hidword(qw))
