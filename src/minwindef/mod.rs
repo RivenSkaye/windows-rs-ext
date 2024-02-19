@@ -13,7 +13,7 @@
 //! Consider them syntactical sugar over the others, as that really is all they are.
 //! They just return a tuple containing (in order) the low order and high order components. This
 //! is achieved by just calling both of those functions one after the other.
-//! ```rs
+//! ```
 //! // existing minwindef.h macros:
 //! let full: u32 = 9548625;
 //! let lo = loword(full);
