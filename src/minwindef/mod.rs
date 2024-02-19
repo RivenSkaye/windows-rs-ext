@@ -1,7 +1,7 @@
 //! # `minwindef.h` macros for use in Rust with the windows-rs and windows-sys crates
-//! This module defines equivalents to the macros defined in Include/<version>/shared/minwindef.h
-//! as part of the Windows SDK. These macros serve to (un)pack numeric values into larger numeric
-//! types.
+//! This module defines equivalents to the macros defined in Include/&lt;version&gt;/shared/minwindef.h
+//! as part of the Windows SDK. These macros serve to (un)pack numeric values into and from larger
+//! numeric types.
 //!
 //! Besides the existing `#define`s, this module adds a couple functions useful for those working
 //! with 64-bit integers and pointers:
