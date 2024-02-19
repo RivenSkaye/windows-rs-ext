@@ -71,7 +71,7 @@ impl DWordExt for u32 {
 /// This trait is included in the convenience wrapper [`windows_ext::ext`][crate::ext].
 ///
 /// ```
-/// use windows_ext::ext::QWordExt; // or: windows_ext::minwindef::ext::DWordExt;
+/// use windows_ext::ext::QWordExt; // or: windows_ext::minwindef::ext::QWordExt;
 ///
 /// assert_eq!(0x1234_5678_9abc_def0u64.hidword(), 0x1234_5678);
 /// assert_eq!(0x1234_5678_9abc_def0u64.lodword(), 0x9abc_def0);
