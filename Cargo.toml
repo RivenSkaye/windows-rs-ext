@@ -1,5 +1,6 @@
 [package]
     authors     = ["Riven Skaye <riven@tae.moe>"]
+    categories  = ["api-bindings", "os::windows-apis"]
     description = "Extensions to windows-rs that serve to provide the macros and header-only functions from the Windows SDK"
     edition     = "2021"
     homepage    = "https://github.com/RivenSkaye/windows-rs-ext"
@@ -8,12 +9,11 @@
     name        = "windows-ext"
     repository  = "https://github.com/RivenSkaye/windows-rs-ext"
     version     = "0.0.1"
-    categories = ["os::windows-apis", "api-bindings"]
 
 [dependencies]
-    windows     = { version = "0.52" }
+    windows = {version = "0.53"}
 
 [features]
-    default      = ["minwindef", "ext-impls"]
-    minwindef    = []
-    ext-impls    = []
+    default   = ["ext-impls", "minwindef"]
+    ext-impls = []
+    minwindef = []
