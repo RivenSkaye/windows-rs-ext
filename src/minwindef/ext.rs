@@ -62,6 +62,14 @@ impl DWordExt for u32 {
     }
 }
 
+impl DWordExt for usize {
+    /// DWord value of a usize. On 64-bit this truncates to the lower 32.
+    #[inline(always)]
+    fn value(self) -> u32 {
+        self as u32
+    }
+}
+
 /// This trait provides the freestanding functions from [minwindef][crate::minwindef]
 /// directly on QWORDs ([u64]).
 ///
@@ -117,5 +125,12 @@ pub trait QWordExt: Copy {
 impl QWordExt for u64 {
     fn value(self) -> u64 {
         self
+    }
+}
+
+impl QWordExt for usize {
+    /// QWord for usize, on 32-bit this has normal padding semantics.
+    fn value(self) -> u64 {
+        self as u64
     }
 }
