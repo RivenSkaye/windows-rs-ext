@@ -92,12 +92,14 @@ pub const fn makeword(low: u8, high: u8) -> u16 {
 
 /// Turn two words into a dword/long
 /// docs are somewhat weird, the macro is named "MAKELONG" but returns a DWORD?
+#[inline(always)]
 pub const fn makelong(low: u16, high: u16) -> u32 {
     (low as u32) | ((high as u32) << 16)
 }
 
 /// Not part of the standard macros, but a logical step to accommodate 64-bit
 /// Named after the underlying C datatype, in Win32 terms this would be a QWORD
+#[inline(always)]
 pub const fn makelonglong(low: u32, high: u32) -> u64 {
     (low as u64) | ((high as u64) << 32)
 }
