@@ -4,6 +4,65 @@
 //! These traits can also be used with [new-types](https://doc.rust-lang.org/rust-by-example/generics/new_types.html).
 
 /// This trait provides the freestanding functions from [minwindef][crate::minwindef]
+/// directly on WORDs ([u16]).
+///
+/// When using [new-types](https://doc.rust-lang.org/rust-by-example/generics/new_types.html) that wrap a WORD,
+/// you can implement this trait by implementing the [value][WordExt::value] method.
+///
+/// This trait is included in the convenience wrapper [`windows_ext::ext`][crate::ext].
+///
+/// ```
+/// use windows_ext::ext::WordExt; // or: windows_ext::minwindef::ext::DWordExt;
+///
+/// assert_eq!(0x12_34u16.hibyte(), 0x12);
+/// assert_eq!(0x12_34u16.lobyte(), 0x34);
+/// ```
+pub trait WordExt: Copy {
+    /// Provide the value of the WORD
+    fn value(self) -> u16;
+
+    /// Get the low order word as [u16]
+    ///
+    /// ```
+    /// # use windows_ext::ext::WordExt;
+    /// assert_eq!(0x12_34u16.lobyte(), 0x34);
+    /// ```
+    #[inline(always)]
+    fn lobyte(self) -> u8 {
+        super::lobyte(self.value())
+    }
+
+    /// Get the high order word as [u16]
+    ///
+    /// ```
+    /// # use windows_ext::ext::WordExt;
+    /// assert_eq!(0x12_34u16.hibyte(), 0x12);
+    /// ```
+    #[inline(always)]
+    fn hibyte(self) -> u8 {
+        super::hibyte(self.value())
+    }
+
+    /// Split a single dword into both of its words (lo, hi)
+    ///
+    /// ```
+    /// # use windows_ext::ext::WordExt;
+    /// assert_eq!(0x12_34u16.split(), (0x34, 0x12));
+    /// ```
+    #[inline(always)]
+    fn split(self) -> (u8, u8) {
+        super::splitword(self.value())
+    }
+}
+
+impl WordExt for u16 {
+    #[inline(always)]
+    fn value(self) -> u16 {
+        self as u16
+    }
+}
+
+/// This trait provides the freestanding functions from [minwindef][crate::minwindef]
 /// directly on DWORDs ([u32]).
 ///
 /// When using [new-types](https://doc.rust-lang.org/rust-by-example/generics/new_types.html) that wrap a DWORD,
