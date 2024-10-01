@@ -13,13 +13,13 @@ Taking the approach of the crates we extend also allows for defining features th
 
 In the future, other crates might be created to further split things out. For example WinRT for COM and stuff for the graphics stack are defined mostly separate from the core OS interfaces exposed in the windows crates. These might at some point split off if the feature list grows too large or if the amount of utility functions warrants it being used independently.
 
-# Licensing
+## Licensing
 
 Nothing strange here, really. Like a lot of other crates in the ecosystem, this is licensed under either [Apache 2.0](./LICENSE-APACHE) or [MIT](./LICENSE-MIT) at your option.
 
 Unless explicitly stated otherwise, any and all contributions submitted for inclusion in the work by you, as defined in the Apache 2.0 license, shall be dual licensed as above, with no additional terms or conditions.
 
-# FAQ
+## FAQ
 
 - Q: I really want to use this crate in my code, can I?  
   A: You _can_. The real question is if you _should_.
