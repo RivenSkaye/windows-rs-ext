@@ -96,25 +96,25 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | hidusage.h | &#x2718; | | Nothing to do here |
 | shared    | hvsocket.h | &#x2718; | | Nothing to do here |
 | shared    | hwn.h | &#x2718; | | Nothing to do here |
-| shared    | ifdef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ifmib.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | iketypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | iketypes.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | in6addr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | inaddr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | infstr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | initguid.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | intsafe.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ioevent.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ip2string.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ipifcons.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ipmib.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | Iprtrmib.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ipsectypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ipsectypes.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ipv6prefast.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | iscsierr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | IssPer16.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | ifdef.h | &#x2718; | | Nothing to do here |
+| shared    | ifmib.h | &#x2714; | &#x2718; | Only a custom sizeof implementation |
+| shared    | iketypes.h | &#x2718; | | Nothing to do here |
+| shared    | iketypes.idl | &#x2718; | | Generator sources |
+| shared    | in6addr.h | &#x2718; | | Nothing to do here |
+| shared    | inaddr.h | &#x2718; | | Nothing to do here |
+| shared    | infstr.h | &#x2718; | | TEXT("Nothing to do here") |
+| shared    | initguid.h | &#x2718; | | Nothing to do here |
+| shared    | intsafe.h | &#x2714; | &#x2718; | Lots of integer funnies! Fallible conversions, with sanity checks and error returns. |
+| shared    | ioevent.h | &#x2718; | | Nothing to do here |
+| shared    | ip2string.h | &#x2718; | | Nothing to do here |
+| shared    | ipifcons.h | &#x2718; | | Nothing to do here |
+| shared    | ipmib.h | &#x2714; | &#x2718; | A few custom sizeof implementations |
+| shared    | Iprtrmib.h | &#x2714; | &#x2718; | Sizeof and some other helpers and info functions |
+| shared    | ipsectypes.h | &#x2718; | | Nothing to do here |
+| shared    | ipsectypes.idl | &#x2718; | | Generator Sources |
+| shared    | ipv6prefast.h | &#x2718; | | Nothing to do here |
+| shared    | iscsierr.h | &#x2718; | | Nothing to do here |
+| shared    | IssPer16.h | &#x2718; | | Nothing to do here |
 | shared    | kernelspecs.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ks.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ksamd64.inc | &#x2714; | &#x2718; | Not yet checked |
