@@ -76,15 +76,15 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | evntprov.h | &#x2718; | | Event API constants and types |
 | shared    | evntrace.h | &#x2718; | | Event Tracing constants and types |
 | shared    | exposeenums2managed.h | &#x2718; | | Enums for Managed Code (the Visual* family of MS langs). Possibly relevant in the future for Visual Rust. |
-| shared    | fltUserStructures.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fttypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwpmtypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwpmtypes.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwpstypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwpstypes.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwptypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwptypes.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | fwpvi.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | fltUserStructures.h | &#x2718; | | Only typedefs |
+| shared    | fttypes.h | &#x2718; | | Only typedefs |
+| shared    | fwpmtypes.h | &#x2718; | | Only typedefs |
+| shared    | fwpmtypes.idl | &#x2718; | | Generator sources |
+| shared    | fwpstypes.h | &#x2718; | | Only typedefs |
+| shared    | fwpstypes.idl | &#x2718; | | Generator sources |
+| shared    | fwptypes.h | &#x2718; | | Only typedefs |
+| shared    | fwptypes.idl | &#x2718; | | Generator sources |
+| shared    | fwpvi.h | &#x2718; | | Literally just constants |
 | shared    | GenericUsbFnIoctl.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | gnssdriver.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | gpio.h | &#x2714; | &#x2718; | Not yet checked |
