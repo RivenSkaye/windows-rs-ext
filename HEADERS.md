@@ -143,10 +143,8 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | msapofxproxy.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | mstcpip.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | mswsockdef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ndis | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ndisguid.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ndkinfo.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | netcx | &#x2714; | &#x2718; | Not yet checked |
 | shared    | netevent.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | netioapi.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | netiodef.h | &#x2714; | &#x2718; | Not yet checked |
