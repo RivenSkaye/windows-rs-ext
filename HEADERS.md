@@ -89,13 +89,13 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | gnssdriver.h | &#x2718; | | Typedefs and constants |
 | shared    | gpio.h | &#x2718; | | Control codes |
 | shared    | guiddef.h | &#x2714; | &#x2718; | Comparisons and comparator overloads for GUIDs |
-| shared    | hbaapi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | hidclass.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | hidpi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | hidsdi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | hidusage.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | hvsocket.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | hwn.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | hbaapi.h | &#x2718; | | Nothing to do here |
+| shared    | hidclass.h | &#x2718; | | Nothing to do here |
+| shared    | hidpi.h | &#x2718; | | Nothing to do here |
+| shared    | hidsdi.h | &#x2718; | | Nothing to do here |
+| shared    | hidusage.h | &#x2718; | | Nothing to do here |
+| shared    | hvsocket.h | &#x2718; | | Nothing to do here |
+| shared    | hwn.h | &#x2718; | | Nothing to do here |
 | shared    | ifdef.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ifmib.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | iketypes.h | &#x2714; | &#x2718; | Not yet checked |
