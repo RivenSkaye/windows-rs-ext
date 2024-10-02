@@ -134,8 +134,8 @@ This page should list all of the headers in the default `Include/<version>/share
 | shared    | lmcons.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | lmerr.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | macamd64.inc | &#x2714; | &#x2718; | Not yet checked |
-| shared    | Math3DHelper.h | &#x2714; | &#x2714; | Expanded to cover `u16` through `u64` for all functions |
-| shared    | minwindef.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | Math3DHelper.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | minwindef.h | &#x2714; | &#x2714; | Expanded to cover `u16` through `u64` for all functions |
 | shared    | mmreg.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | mprapidef.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | msapofxproxy.h | &#x2714; | &#x2718; | Not yet checked |
