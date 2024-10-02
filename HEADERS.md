@@ -2,11 +2,13 @@
 
 This page should list all of the headers in the default `Include/<version>/shared` folder for the Windows SDK. The UCRT headers were taken as a starting point, the other directories in the versioned SDK might at some point be added, if they prove to contain more useful things not provided through the existing projections.
 
+Entries for which the headers have not yet been tracked are subject to become unplanned if it turns out they don't fit the project. Driver and device interfaces will not be supported here unless someone else comes on board to maintain them. There's some stuff not (yet) worth using.
+
 | Directory | File | Planned  | Implemented | Notes |
 |-----------|------|----------|-------------|-------|
 | shared/ndis | *  | &#x2718; | | Network Driver stuff, out of scope |
 | shared/netcx | * | &#x2718; | | Network Adapter Class Extensions |
-| shared    | afunix.h | &#x2718; | | At least not until [this is fixed](https://github.com/microsoft/WSL/issues/4240) |
+| shared    | afunix.h | &#x2718; | | At least not until [this is fixed](https://github.com/microsoft/WSL/issues/4240). |
 | shared    | apdevpkey.h | &#x2718; | | Nothing to do here |
 | shared    | apiset.h | &#x2718; | | Nothing to do here |
 | shared    | apisetcconv.h | &#x2718; | | Nothing to do here |
@@ -43,31 +45,31 @@ This page should list all of the headers in the default `Include/<version>/share
 | shared    | diskguid.h | &#x2718; | | Nothing to do here |
 | shared    | dls1.h | &#x2718; | | Nothing to do here |
 | shared    | dls2.h | &#x2718; | | Nothing to do here |
-| shared    | dmdls.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dmerror.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dmusbuff.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dontuse.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dpfilter.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | driverspecs.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | drivinit.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_2.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_2.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_3.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_3.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_4.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_4.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_5.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_5.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_6.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgi1_6.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgicommon.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgicommon.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgiformat.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgiformat.idl | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgitype.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | dxgitype.idl | &#x2714; | &#x2718; | Not yet checked |
+| shared    | dmdls.h | &#x2714; | &#x2718; | Seems to only be the MakeFourCC macro which turns a string into a single byte `OR`ed value, might also be defined elsewhere? |
+| shared    | dmerror.h | &#x2714; | &#x2718; | `MakeHResult` seems interesting, but might be defined elsewhere too. DMH Error and Success wrappers could be interesting too, if DirectMusic has projections. |
+| shared    | dmusbuff.h | &#x2714; | &#x2718; | `DMUS_EVENT_SIZE` if DirectMusic has projections, QWORD_ALIGN seems cool in general. |
+| shared    | dontuse.h | &#x2718; | | This just adds deprecation warnings to C(++) functions and is not relevant to us. |
+| shared    | dpfilter.h | &#x2718; | | Just a typedef |
+| shared    | driverspecs.h | &#x2718; | | Out of scope |
+| shared    | drivinit.h | &#x2714; | &#x2714; | All definitions were moved out, it's literally empty. |
+| shared    | dxgi.h | &#x2753; | &#x2714; | A fair few definitions, but only for C types so they can be accessed the same way as their C++ equivalent classes |
+| shared    | dxgi.idl | &#x2718; | &#x2718; | Extra information and comments for the generated `dxgi.h` |
+| shared    | dxgi1_2.h | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.2) |
+| shared    | dxgi1_2.idl | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.2) |
+| shared    | dxgi1_3.h | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.3) |
+| shared    | dxgi1_3.idl | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.3) |
+| shared    | dxgi1_4.h | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.4) |
+| shared    | dxgi1_4.idl | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.4) |
+| shared    | dxgi1_5.h | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.5) |
+| shared    | dxgi1_5.idl | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.5) |
+| shared    | dxgi1_6.h | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.6) |
+| shared    | dxgi1_6.idl | &#x2718; | | dxgi.h versioned additions. If added, would be merged into one file. (DirectX Graphics Infrastructure version 1.6) |
+| shared    | dxgicommon.h | &#x2718; | | Nothing to implement |
+| shared    | dxgicommon.idl | &#x2718; | | Generator source for header |
+| shared    | dxgiformat.h | &#x2718; | | Constants and typedefs |
+| shared    | dxgiformat.idl | &#x2718; | | Generator source for header |
+| shared    | dxgitype.h | &#x2718; | | Constants and typedefs |
+| shared    | dxgitype.idl | &#x2718; | | Generator source for header |
 | shared    | ehstorbandmgmt.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ehstorioctl.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | emi.h | &#x2714; | &#x2718; | Not yet checked |
