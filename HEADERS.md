@@ -70,12 +70,12 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | dxgiformat.idl | &#x2718; | | Generator source for header |
 | shared    | dxgitype.h | &#x2718; | | Constants and typedefs |
 | shared    | dxgitype.idl | &#x2718; | | Generator source for header |
-| shared    | ehstorbandmgmt.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ehstorioctl.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | emi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | evntprov.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | evntrace.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | exposeenums2managed.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | ehstorbandmgmt.h | &#x2714; | &#x2718; | Enhanced Storage IOCTL Band Control and Trading Card Games (Trusted Computing Group) Storage Silo |
+| shared    | ehstorioctl.h | &#x2714; | &#x2718; | More Enhanced storage IOCTL stuff |
+| shared    | emi.h | &#x2714; | &#x2718; | Energy Metering Interfaces |
+| shared    | evntprov.h | &#x2718; | | Event API constants and types |
+| shared    | evntrace.h | &#x2718; | | Event Tracing constants and types |
+| shared    | exposeenums2managed.h | &#x2718; | | Enums for Managed Code (the Visual* family of MS langs). Possibly relevant in the future for Visual Rust. |
 | shared    | fltUserStructures.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | fttypes.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | fwpmtypes.h | &#x2714; | &#x2718; | Not yet checked |
