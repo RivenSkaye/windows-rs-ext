@@ -85,10 +85,10 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | fwptypes.h | &#x2718; | | Only typedefs |
 | shared    | fwptypes.idl | &#x2718; | | Generator sources |
 | shared    | fwpvi.h | &#x2718; | | Literally just constants |
-| shared    | GenericUsbFnIoctl.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | gnssdriver.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | gpio.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | guiddef.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | GenericUsbFnIoctl.h | &#x2718; | | Just a few control codes |
+| shared    | gnssdriver.h | &#x2718; | | Typedefs and constants |
+| shared    | gpio.h | &#x2718; | | Control codes |
+| shared    | guiddef.h | &#x2714; | &#x2718; | Comparisons and comparator overloads for GUIDs |
 | shared    | hbaapi.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | hidclass.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | hidpi.h | &#x2714; | &#x2718; | Not yet checked |
