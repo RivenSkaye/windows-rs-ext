@@ -13,6 +13,12 @@ Taking the approach of the crates we extend also allows for defining features th
 
 In the future, other crates might be created to further split things out. For example WinRT for COM and stuff for the graphics stack are defined mostly separate from the core OS interfaces exposed in the windows crates. These might at some point split off if the feature list grows too large or if the amount of utility functions warrants it being used independently.
 
+## The headers
+
+There are _a lot_ of header files in the SDK, and not all of them have definitions that are remotely useful or even actually macros or functions. The filesystem headers, for example, define some macros to handle the usual string comparison for disk- and partition GUIDs. Rust has a direct string comparison function, so there's no benefit to implementing those here. There's also a lot of headers to only define (interface) structs and whatnot, which also isn't useful for Rust as far as I'm aware. If there are any not generated in the projections that would be useful, open an issue or a PR for them.
+
+For a full list of what headers there are, whether there's any implementation to be done, and whether or not it's done, please refer to [the headers listing](./HEADERS). If you're planning to add new definitions, please do mark their actual state of implementation in the table as well.
+
 ## Licensing
 
 Nothing strange here, really. Like a lot of other crates in the ecosystem, this is licensed under either [Apache 2.0](./LICENSE-APACHE) or [MIT](./LICENSE-MIT) at your option.
