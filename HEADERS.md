@@ -1,13 +1,13 @@
 # Headers from the Windows SDK
 
-This page should list all of the headers in the default `Include/<version>/shared` folder for the Windows SDK. The UCRT headers were taken as a starting point, the other directories in the versioned SDK might at some point be added, if they prove to contain more useful things not provided through the existing projections.
+This page should list all of the headers in the default `Include/<version>/shared` folder for the Windows 10 SDK. For dependency resolution on other headers, the UCRT headers were taken as a starting point, but other SDK-specific headers might be feature includes later. The other directories in the versioned SDK might at some point be added, if they prove to contain more useful things not provided through the existing projections.
 
 Entries for which the headers have not yet been tracked are subject to become unplanned if it turns out they don't fit the project. Driver and device interfaces will not be supported here unless someone else comes on board to maintain them. There's some stuff not (yet) worth using.
 
 | Directory | File | Planned  | Implemented | Notes |
 |-----------|------|----------|-------------|-------|
-| shared/ndis | *  | &#x2718; | | Network Driver stuff, out of scope |
-| shared/netcx | * | &#x2718; | | Network Adapter Class Extensions |
+| shared/ndis | *  | &#x2718; | | Network Driver stuff, will do later |
+| shared/netcx | * | &#x2718; | | Network Adapter Class Extensions, will do later |
 | shared    | afunix.h | &#x2718; | | At least not until [this is fixed](https://github.com/microsoft/WSL/issues/4240). |
 | shared    | apdevpkey.h | &#x2718; | | Nothing to do here |
 | shared    | apiset.h | &#x2718; | | Nothing to do here |
@@ -115,26 +115,26 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | ipv6prefast.h | &#x2718; | | Nothing to do here |
 | shared    | iscsierr.h | &#x2718; | | Nothing to do here |
 | shared    | IssPer16.h | &#x2718; | | Nothing to do here |
-| shared    | kernelspecs.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ks.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksamd64.inc | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksamd64_stub.inc | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksarm.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksarm64.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksguid.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksmedia.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksproxy.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ksuuids.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ktmtypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | kxamd64.inc | &#x2714; | &#x2718; | Not yet checked |
-| shared    | kxamd64_stub.inc | &#x2714; | &#x2718; | Not yet checked |
-| shared    | kxarm.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | kxarm64.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | kxarm64unw.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | kxarmunw.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | lamp.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | lmcons.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | lmerr.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | kernelspecs.h | &#x2714; | &#x2718; | Macro bodies might suddenly change - they're macros made up of other macros. |
+| shared    | ks.h | &#x2714; | &#x2718; | Lots to do |
+| shared    | ksamd64.inc | &#x2718; | | Lots of useful info, but nothing to do |
+| shared    | ksamd64_stub.inc | &#x2718; | | Includes another include |
+| shared    | ksarm.h | &#x2718; | | Only constants |
+| shared    | ksarm64.h | &#x2718; | | ksarm with bigger numbers |
+| shared    | ksguid.h | &#x2714; | &#x2718; | Fun GUID toys |
+| shared    | ksmedia.h | &#x2714; | &#x2718; | Cool media-related stuff |
+| shared    | ksproxy.h | &#x2718; | | Only interfaces |
+| shared    | ksuuids.h | &#x2718; | | Constants |
+| shared    | ktmtypes.h | &#x2714; | &#x2718; | A few bytelength macros|
+| shared    | kxamd64.inc | &#x2718; | | Not sure anyone should be touching that |
+| shared    | kxamd64_stub.inc | &#x2718; | | imports the previous menace |
+| shared    | kxarm.h | &#x2718; | | ARM Assembly masqueraiding as a header file |
+| shared    | kxarm64.h | &#x2718; | | ARM64 Assembly masqueraiding as a header file |
+| shared    | kxarm64unw.h | &#x2718; | | ARM64 Assembly masqueraiding as a header file |
+| shared    | kxarmunw.h | &#x2718; | | ARM Assembly masqueraiding as a header file |
+| shared    | lamp.h | &#x2718; | | Nothing to do here |
+| shared    | lmcons.h | &#x2718; | | Nothing to do here |
+| shared    | lmerr.h | &#x2718; | | Nothing to do here |
 | shared    | macamd64.inc | &#x2714; | &#x2718; | Not yet checked |
 | shared    | Math3DHelper.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | minwindef.h | &#x2714; | &#x2714; | Expanded to cover `u16` through `u64` for all functions |
