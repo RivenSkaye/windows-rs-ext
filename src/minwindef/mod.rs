@@ -7,12 +7,13 @@
 //! with 64-bit integers and pointers:
 //! - [`lodword`] and [`hidword`] to get the lower and higher 32 bits from them
 //! - [`makelonglong`] to pack two 32-bit ints into a 64-bit int.
-//! These were added because they're needed for working with e.g. `CreateFileMapping*` functions.
+//! These were added because they're useful for working with e.g. `CreateFileMapping*` functions.
 //!
 //! Lastly some additional methods were added for splitting and returning both values at once.
 //! Consider them syntactical sugar over the others, as that really is all they are.
 //! They just return a tuple containing (in order) the low order and high order components. This
 //! is achieved by just calling both of those functions one after the other.
+//!
 //! ```
 //! use windows_ext::minwindef::*;
 //! // existing minwindef.h macros:
