@@ -1,6 +1,6 @@
 # Extensions for the `windows-rs` and `windows-sys` crates
 
-The code here is _not_ (yet?) meant as a production-quality crate. It exists to provide basic implementations of macros and header-only functions from the Windows SDK. Initially proposed as a collection of snippets to be added to [Kenny Kerr's blog](https://github.com/kennykerr/blog) in a [formalized feature request](https://github.com/microsoft/windows-rs/issues/2798) where it was initially decided to add snippets to the blog.
+The code here is _not_ (yet?) meant as a production-quality crate. It exists to provide basic implementations of macros and header-only functions from the Windows 10 SDK. Initially proposed as a collection of snippets to be added to [Kenny Kerr's blog](https://github.com/kennykerr/blog) in a [formalized feature request](https://github.com/microsoft/windows-rs/issues/2798) where it was initially decided to add snippets to the blog.
 
 When it became clear that perhaps blog snippets weren't the best option [due to no testing and high review burdens](https://github.com/kennykerr/blog/pull/3), the choice was made to move out the snippets to an automatically testable crate [in the last comment](https://github.com/kennykerr/blog/pull/3#issuecomment-1900045764). This is the repo for that. That said, the goal has since become to make this a usable crate to provide those functions and wrappers directly, but for that it needs to grow into a useful collection of helpers that provide what the win32 metadata project doesn't.
 
@@ -44,6 +44,9 @@ Unless explicitly stated otherwise, any and all contributions submitted for incl
 
 - Q: I requested something but it was closed as wontfix, why is that?  
   A: Some macros are actually only relevant to the C++ stuff and this repo only exists for actual added value. If you believe the request to add value for Rust as well, feel free to keep the discussion on the issue thread going, or PR it in to show where the added value lies.
+
+- Q: Why specifically Windows 10?
+  A: It's the only SDK I have installed and have testing systems for, and it's big enough to already make it an ambitious endavour. Perhaps 11 SDK versions will be added when 10 is fully done and I have the time to spare. Unless a contributor for it comes along of course.
 
 - Q: My question isn't in here, and none of these seem to make sense. What should I do?  
   A: Frequency and a very young crate don't mix, so these were just the first few things I could think of that people would ask. That said, issues are a perfectly fine place to ask questions, and if one sticks out, it'll find its place here.
