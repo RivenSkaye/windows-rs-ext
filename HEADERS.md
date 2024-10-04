@@ -135,17 +135,17 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | lamp.h | &#x2718; | | Nothing to do here |
 | shared    | lmcons.h | &#x2718; | | Nothing to do here |
 | shared    | lmerr.h | &#x2718; | | Nothing to do here |
-| shared    | macamd64.inc | &#x2714; | &#x2718; | Not yet checked |
-| shared    | Math3DHelper.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | macamd64.inc | &#x2718; | | More arcane level assembly |
+| shared    | Math3DHelper.h | &#x2718; | | Rust has proper math libraries. Not implementing, unless there's no other way to get some of these objects. |
 | shared    | minwindef.h | &#x2714; | &#x2714; | Expanded to cover `u16` through `u64` for all functions |
-| shared    | mmreg.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | mprapidef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | msapofxproxy.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | mstcpip.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | mswsockdef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ndisguid.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ndkinfo.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | netevent.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | mmreg.h | &#x2714; | &#x2718; | Some multimedia & GUID stuff |
+| shared    | mprapidef.h | &#x2718; | | Nothing to do here |
+| shared    | msapofxproxy.h | &#x2718; | | Nothing to do here |
+| shared    | mstcpip.h | &#x2718; | | Nothing to do here, use `std::net::IpAddr` |
+| shared    | mswsockdef.h | &#x2714; | &#x2718; | What do you **mean** Microsoft-specific extensions to the Windows Sockets API? Is there a non-MS Windows Socket API? IN MS WINDOWS? |
+| shared    | ndisguid.h | &#x2718; | | Nothing to do here |
+| shared    | ndkinfo.h | &#x2718; | | Nothing to do here |
+| shared    | netevent.h | &#x2718; | | Nothing to do here |
 | shared    | netioapi.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | netiodef.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | nettypes.h | &#x2714; | &#x2718; | Not yet checked |
