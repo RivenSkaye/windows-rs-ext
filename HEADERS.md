@@ -182,17 +182,17 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | ntverp.h | &#x2718; | | We have version numbers at home |
 | shared    | ntverp.ver | &#x2718; | | Nothing to do here |
 | shared    | nvme.h | &#x2718; | | Nothing to do here |
-| shared    | packoff.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | packon.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pciprop.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | poclass.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | poppack.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pshpack1.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pshpack2.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pshpack4.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pshpack8.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pshpck16.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | pwm.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | packoff.h | &#x2718; | | Nothing to do here |
+| shared    | packon.h |&#x2718; | | Nothing to do here |
+| shared    | pciprop.h | &#x2714; | &#x2718; | |
+| shared    | poclass.h | &#x2718; | | Nothing to do here |
+| shared    | poppack.h | &#x2718; | | Nothing to do here |
+| shared    | pshpack1.h | &#x2718; | | Nothing to do here |
+| shared    | pshpack2.h | &#x2718; | | Nothing to do here |
+| shared    | pshpack4.h | &#x2718; | | Nothing to do here |
+| shared    | pshpack8.h | &#x2718; | | Nothing to do here |
+| shared    | pshpck16.h | &#x2718; | | Nothing to do here |
+| shared    | pwm.h | &#x2718; | | Nothing to do here |
 | shared    | qos.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | qosobjs.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | qossp.h | &#x2714; | &#x2718; | Not yet checked |
