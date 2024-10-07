@@ -193,9 +193,9 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | pshpack8.h | &#x2718; | | Nothing to do here |
 | shared    | pshpck16.h | &#x2718; | | Nothing to do here |
 | shared    | pwm.h | &#x2718; | | Nothing to do here |
-| shared    | qos.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | qosobjs.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | qossp.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | qos.h | &#x2718; | | Nothing to do here |
+| shared    | qosobjs.h | &#x2718; | | Nothing to do here |
+| shared    | qossp.h | &#x2718; | | Nothing to do here |
 | shared    | reshub.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | rpc.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | rpcasync.h | &#x2714; | &#x2718; | Not yet checked |
