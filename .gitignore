@@ -3,3 +3,4 @@
 
 # Ignore vsc stuff
 /.vscode
+Cargo.lock
