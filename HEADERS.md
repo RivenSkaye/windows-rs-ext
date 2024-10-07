@@ -2,7 +2,9 @@
 
 This page should list all of the headers in the default `Include/<version>/shared` folder for the Windows 10 SDK. For dependency resolution on other headers, the UCRT headers were taken as a starting point, but other SDK-specific headers might be feature includes later. The other directories in the versioned SDK might at some point be added, if they prove to contain more useful things not provided through the existing projections.
 
-Entries for which the headers have not yet been tracked are subject to become unplanned if it turns out they don't fit the project. Driver and device interfaces will not be supported here unless someone else comes on board to maintain them. There's some stuff not (yet) worth using.
+Entries for which the headers have not yet been tracked are subject to become unplanned if it turns out they don't fit the project. Driver and device interfaces will not be supported soon, as they're a lot of work. There's some stuff not (yet) worth using.
+
+This list is preliminary and in ***very early stages***. That is to say, before actually implementing planned stuff, check if the upstream `windows-rs` crate doesn't already have the equivalent. I it does, no need to reinvent the wheel.
 
 | Directory | File | Planned  | Implemented | Notes |
 |-----------|------|----------|-------------|-------|
@@ -196,14 +198,14 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | qos.h | &#x2718; | | Nothing to do here |
 | shared    | qosobjs.h | &#x2718; | | Nothing to do here |
 | shared    | qossp.h | &#x2718; | | Nothing to do here |
-| shared    | reshub.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpc.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpcasync.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpcdce.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpcdcep.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpcndr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpcnterr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | rpcsal.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | reshub.h | &#x2718; | | It's a custom assert |
+| shared    | rpc.h | &#x2718; | | Deal with SEH yourself, or use [microseh](https://github.com/sonodima/microseh) |
+| shared    | rpcasync.h | &#x2714; | &#x2718; | Casting non-primitives, fun |
+| shared    | rpcdce.h | &#x2718; | | Nothing to do here |
+| shared    | rpcdcep.h | &#x2718; | | Nothing to do here |
+| shared    | rpcndr.h | &#x2714; | &#x2718; | NDR stuff |
+| shared    | rpcnterr.h | &#x2718; | | Nothing to do here |
+| shared    | rpcsal.h | &#x2714; | &#x2718; | Lots of SAL calls, but with pre-filled args and pointer shuffling |
 | shared    | sal.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | scsi.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | scsiscan.h | &#x2714; | &#x2718; | Not yet checked |
