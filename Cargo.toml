@@ -8,7 +8,7 @@
     license     = "MIT OR Apache-2.0"
     name        = "windows-ext"
     repository  = "https://github.com/RivenSkaye/windows-rs-ext"
-    version     = "0.0.2"
+    version     = "0.0.3"
 
 [dependencies]
     windows = {version = "0.58"}
