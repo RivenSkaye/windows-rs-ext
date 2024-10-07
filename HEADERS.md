@@ -160,28 +160,28 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | ntddcdrm.h | &#x2718; | | Nothing to do here |
 | shared    | ntddcdvd.h | &#x2718; | | Nothing to do here |
 | shared    | ntddchgr.h | &#x2718; | | Nothing to do here |
-| shared    | ntdddisk.h | &#x2714; | &#x2718; | Some disk geometry stuff, maybe? |
-| shared    | ntddkbd.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddmmc.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddmodm.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddmou.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddndis.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddpar.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddscm.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddscsi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddser.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddstor.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddtape.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddtdi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddvdeo.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddvol.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntdef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntdskreg.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntiologc.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntstatus.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntverp.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntverp.ver | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nvme.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | ntdddisk.h | &#x2718; | | Some disk geometry stuff, maybe? |
+| shared    | ntddkbd.h | &#x2718; | | Would enahnced keyboard detection even add anything? |
+| shared    | ntddmmc.h | &#x2718; | | Nothing to do here |
+| shared    | ntddmodm.h | &#x2718; | | Nothing to do here |
+| shared    | ntddmou.h | &#x2718; | | Nothing to do here |
+| shared    | ntddndis.h | &#x2718; | | Nothing to do here |
+| shared    | ntddpar.h | &#x2718; | | Nothing to do here |
+| shared    | ntddscm.h | &#x2718; | | Nothing to do here |
+| shared    | ntddscsi.h | &#x2718; | | Nothing to do here |
+| shared    | ntddser.h | &#x2718; | | Nothing to do here |
+| shared    | ntddstor.h | &#x2714; | &#x2718; | |
+| shared    | ntddtape.h | &#x2718; | | Nothing to do here |
+| shared    | ntddtdi.h | &#x2714; | &#x2718; | Not sure if it's worth it even |
+| shared    | ntddvdeo.h | &#x2718; | | This one only calculates the size of the data behind a frame buffer pointer... |
+| shared    | ntddvol.h | &#x2718; | | Nothing to do here |
+| shared    | ntdef.h | &#x2714; | &#x2718; | Cool NT stuff to do I guess |
+| shared    | ntdskreg.h | &#x2718; | | Nothing to do here |
+| shared    | ntiologc.h | &#x2718; | | Nothing to do here |
+| shared    | ntstatus.h | &#x2714; | &#x2718; | HRESULT and WIN32 to NTSTATUS |
+| shared    | ntverp.h | &#x2718; | | We have version numbers at home |
+| shared    | ntverp.ver | &#x2718; | | Nothing to do here |
+| shared    | nvme.h | &#x2718; | | Nothing to do here |
 | shared    | packoff.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | packon.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | pciprop.h | &#x2714; | &#x2718; | Not yet checked |
