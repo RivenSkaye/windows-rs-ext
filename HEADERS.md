@@ -146,21 +146,21 @@ Entries for which the headers have not yet been tracked are subject to become un
 | shared    | ndisguid.h | &#x2718; | | Nothing to do here |
 | shared    | ndkinfo.h | &#x2718; | | Nothing to do here |
 | shared    | netevent.h | &#x2718; | | Nothing to do here |
-| shared    | netioapi.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | netiodef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nettypes.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nfcdtadev.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nfcradiodev.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nfcsedev.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nfpdev.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | nldef.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | no_sal2.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntdd1394.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddbeep.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddcdrm.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddcdvd.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntddchgr.h | &#x2714; | &#x2718; | Not yet checked |
-| shared    | ntdddisk.h | &#x2714; | &#x2718; | Not yet checked |
+| shared    | netioapi.h | &#x2718; | | These are only API defs, impl lives elsewhere. |
+| shared    | netiodef.h | &#x2718; | | Nothing not in `std::net` other than prefixing strings with `\\.\` or `\DEVICE\` |
+| shared    | nettypes.h | &#x2718; | | Nothing to do here |
+| shared    | nfcdtadev.h | &#x2718; | | Nothing to do here |
+| shared    | nfcradiodev.h | &#x2718; | | Nothing to do here |
+| shared    | nfcsedev.h | &#x2718; | | This only provides macros to create anonymous structs with sized element and payload data for NFC. Roll your own structs instead. |
+| shared    | nfpdev.h | &#x2718; | | Nothing to do here |
+| shared    | nldef.h | &#x2718; | | No macros ~~and also not a definition of The Netherlands (NL)~~ |
+| shared    | no_sal2.h | &#x2718; | | This undefines everything SAL2 |
+| shared    | ntdd1394.h | &#x2718; | | Nothing to do here |
+| shared    | ntddbeep.h | &#x2718; | | BEEP |
+| shared    | ntddcdrm.h | &#x2718; | | Nothing to do here |
+| shared    | ntddcdvd.h | &#x2718; | | Nothing to do here |
+| shared    | ntddchgr.h | &#x2718; | | Nothing to do here |
+| shared    | ntdddisk.h | &#x2714; | &#x2718; | Some disk geometry stuff, maybe? |
 | shared    | ntddkbd.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ntddmmc.h | &#x2714; | &#x2718; | Not yet checked |
 | shared    | ntddmodm.h | &#x2714; | &#x2718; | Not yet checked |
