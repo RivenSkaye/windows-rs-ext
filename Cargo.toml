@@ -11,7 +11,7 @@
     version     = "0.0.3"
 
 [dependencies]
-    windows = {version = "0.58"}
+    windows = {version = "0.59"}
 
 [features]
     default   = ["ext-impls", "minwindef"]
